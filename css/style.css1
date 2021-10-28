@@ -1,0 +1,44 @@
+/*
+Hamburger menu
+nav ul{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 20%;
+    height: 13vh;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.menu-icons {
+    display: inline;
+}
+
+nav a {
+    color: #4B5F6D;
+    border: 1px solid red;
+    text-decoration: underline;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.menu{
+display: none;
+}
+
+.hamburger-label{
+    padding: 10px;
+    font-size: 1.5em;
+    display: block;
+}
+
+#hamburger-menu{
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}

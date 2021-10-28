@@ -10,23 +10,44 @@
 </head>
 <body>
   <header>
+    <input type="checkbox" id="hamburger-menu">
     <nav>
-      <ul>
-        <li><i class="fas fa-bars"></i> </li> 
-        <li><i class="fas fa-search"></i></li> 
-        <li><i class="fas fa-home"></i></li> 
-        <li><i class="fas fa-shopping-cart"></i></li> 
-        </div>
-      </ul>
+       <!--<div class="menu">
+        
+         <div class="menu-icons">
+            <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+          </div>
+        <ul>
+          <div class="menu-text">
+            <li><a href="/images/"></a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="jackets.html">Jackets</a></li>
+          </div>
+        </ul> -->
+      </div>
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <div class="icons">
+        <i class="fas fa-search"></a></i>
+        <i class="fas fa-info-circle"></i>
+        <i class="fas fa-shopping-basket"></i>
+      </div>
     </nav>
   </header>
   <main>
-    <h1><img src="/images/RainyDays_Logo.png" alt="Rainydays" class="logo"></h1>
+    <img src="/images/RainyDays_Logo.png" alt="Rainydays" class="logo">
     <button class="cta">Jackets</button>
     <section class="homepage__images">
-      <img class="img-small waterfall" src="/images/blake-cheek-dw96lVwMXJg-unsplash kopi - endret kontrast og str.jpg" alt="Girl in jacket and a waterfall">
-      <img class="img rain" src="/images/gage-walker-6LT0b6LmCt4-unsplash.jpg" alt="Girl in jacket in the rain">
-      <img class="img-small forrest" src="/images/daoud-abismail-oG4OvTFbiXk-unsplash.jpg" alt="Boy in jacket in the woods">
+      <figure class="nonfeatured-image">
+        <img src="/images/blake-cheek-dw96lVwMXJg-unsplash kopi - endret kontrast og str.jpg" alt="Girl in jacket and a waterfall">
+      </figure>
+      <figure class="featured-image">
+        <img src="/images/gage-walker-6LT0b6LmCt4-unsplash.jpg" alt="Girl in jacket in the rain">
+      </figure>
+      <figure class="nonfeatured-image">
+        <img src="/images/daoud-abismail-oG4OvTFbiXk-unsplash.jpg" alt="Boy in jacket in the woods">
+      </figure>
     </section>
     <button class="cta cta-big">Explore more</button>
   </main>
@@ -42,8 +63,8 @@
       <i class="fas fa-comments"></i>
       <i class="fas fa-share-alt"></i>
     </div>
-    <a href="#">Delivery details</a>
-    <a href="#">Cooporation information</a>
+    <a class="link-delivery" href="#">Delivery details</a>
+    <a class="link-coop" href="#">Cooporation information</a>
   </footer>
 </body>
 </html>
