@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "palatino";
+  font-family: "Palatino ";
   src: url(../images/Palatino.ttf) format(ttf);
 }
 
@@ -13,6 +13,7 @@ body {
 header {
   width: 100%;
   grid-row: 1;
+  height: 150px;
 }
 
 nav {
@@ -21,6 +22,12 @@ nav {
   position: fixed;
   top: 0;
   padding: 20px;
+  padding-top: 30px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
 }
 
 .menu-text {
@@ -54,7 +61,6 @@ main {
 
 .logo {
   width: 80%;
-  margin-top: 70px;
 }
 
 .cta {
@@ -64,7 +70,13 @@ main {
   padding: 10px 30px;
   font-size: 1.5em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin: 30px;
+  margin: 50px;
+  color: #4b5f6d;
+}
+
+.cta:hover {
+  background-color: #5e7c88;
+  border-color: #feb41c;
 }
 
 .cta-big {
@@ -73,11 +85,21 @@ main {
   margin-bottom: 100px;
 }
 
+.cta-big:hover {
+  background-color: #feb41c;
+  border-color: #5e7c88;
+}
+
 .homepage__images {
   max-width: 800px;
   display: flex;
   flex-direction: row;
   align-content: center;
+  margin-bottom: 50px;
+}
+
+.info-text {
+  display: none;
 }
 
 section figure {
@@ -119,6 +141,7 @@ h2 {
 p {
   margin: 0px;
   padding-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .so-me {
@@ -159,4 +182,95 @@ h2 {
 }
 .link-coop {
   grid-area: link-coop;
+}
+
+@media (min-width: 700px) {
+  .menu-text {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px auto;
+    padding-left: 0px;
+    max-width: 80%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 1em;
+  }
+
+  nav {
+    padding-left: 0;
+  }
+
+  .hamburger-label,
+  .fa-info-circle {
+    display: none;
+  }
+
+  .menu-text li {
+    list-style-type: none;
+    display: inline;
+    margin: 0px auto;
+    padding: 0px 20px;
+  }
+
+  .menu-text a {
+    text-decoration: none;
+    text-align: center;
+    color: #4b5f6d;
+    border: 3px solid #5e7c88;
+    border-radius: 30px;
+    padding: 5px 20px;
+  }
+
+  .menu-text a:hover {
+    background-color: #5e7c88;
+    border-color: #feb41c;
+  }
+
+  .logo-home {
+    max-width: 100px;
+  }
+
+  main {
+    max-width: 800px;
+  }
+
+  .info-text {
+    display: inline;
+    margin: 50px;
+    padding: 0;
+    margin: 0;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-rows: 1fr auto 1fr;
+  }
+
+  h2 {
+    grid-column: 2/4;
+    padding: 30px 0px 0px 0px;
+  }
+
+  .so-me {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .links {
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  .link-delivery {
+    grid-column: 2;
+    grid-row: 3;
+    margin: auto;
+  }
+
+  .link-coop {
+    grid-column: 3;
+    grid-row: 3;
+    margin: auto;
+  }
 }
