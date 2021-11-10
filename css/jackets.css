@@ -1,0 +1,39 @@
+/*jackets*/
+.info-img {
+  background-image: url(/images/gage-walker-6LT0b6LmCt4-unsplash.jpg);
+  background-color: #ccc;
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+}
+
+.info-img p {
+  background-color: #feb41c;
+  font-size: 2em;
+  padding: 10px;
+}
+
+.jackets-features img {
+  width: 100%;
+  border: solid 3px #5e7c88;
+}
+
+.jackets {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 50px;
+  text-align: center;
+}
+
+.jackets-features h2 {
+  margin: 0;
+}
+
+.jackets-features p {
+  margin: 0;
+}
+
+.jackets-page p {
+  color: #4b5f6d;
+}

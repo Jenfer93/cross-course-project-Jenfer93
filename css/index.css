@@ -1,0 +1,31 @@
+/* Home page */
+.homepage__images {
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+
+.info-text {
+  display: none;
+}
+
+section figure {
+  flex: 1;
+  padding: 0px 10px;
+  margin: 0;
+}
+
+.homepage__images img {
+  width: 100%;
+}
+
+.featured-image {
+  flex: 2;
+}
+
+.nonfeatured-image {
+  padding-top: 50px;
+}

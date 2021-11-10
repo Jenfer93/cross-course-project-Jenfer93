@@ -6,6 +6,7 @@
 body {
   margin: 0px auto;
   width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
@@ -13,7 +14,7 @@ body {
 header {
   width: 100%;
   grid-row: 1;
-  height: 150px;
+  height: 100px;
 }
 
 nav {
@@ -25,19 +26,15 @@ nav {
   padding-top: 30px;
 }
 
+.fa-shopping-basket,
+.fa-info-circle,
+.fa-home {
+  color: #000;
+}
+
 ul {
   margin: 0px;
   padding: 0px;
-}
-
-.menu-text {
-  display: none;
-}
-
-.hamburger-label {
-  font-size: 2em;
-  padding: 20px 30px;
-  margin-top: 20px;
 }
 
 .icons {
@@ -59,20 +56,45 @@ main {
   grid-row: 2;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Palatino", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  color: #4b5f6d;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
 .logo {
   width: 80%;
+  margin-bottom: 100px;
+}
+
+main a {
+  text-decoration: none;
 }
 
 .cta {
+  display: block;
   border: 3px solid #5e7c88;
-  background-color: white;
+  background-color: #fff;
   border-radius: 30px;
   padding: 10px 30px;
+  margin: 0px auto;
+  max-width: 150px;
+  text-align: center;
   font-size: 1.5em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
-  margin: 50px;
   color: #4b5f6d;
+  transition: background-color 1s;
 }
 
 .cta:hover {
@@ -83,9 +105,11 @@ main {
 }
 
 .cta-big {
+  display: inline-block;
   border: 3px solid #feb41c;
-  padding: 15px 60px;
-  margin-bottom: 100px;
+  padding: 10px auto;
+  max-width: 300px;
+  margin: 50px;
 }
 
 .cta-big:hover {
@@ -93,41 +117,12 @@ main {
   border-color: #5e7c88;
 }
 
-.homepage__images {
-  max-width: 800px;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  margin-bottom: 50px;
-}
-
-.info-text {
-  display: none;
-}
-
-section figure {
-  flex: 1;
-  padding: 0px 10px;
-  margin: 0;
-}
-
-.homepage__images img {
-  max-width: 100%;
-}
-
-.featured-image {
-  flex: 2;
-}
-
-.nonfeatured-image {
-  padding-top: 50px;
-}
-
 footer {
   justify-content: center;
-  color: white;
+  color: #fff;
   font-size: 1em;
   grid-row: 3;
+  margin-top: 100px;
   background-color: #5e7c88;
   display: grid;
   grid-template-areas:
@@ -136,15 +131,16 @@ footer {
     "link-delivery link-coop";
 }
 
-h2 {
+footer h2 {
   margin: auto;
   padding: 30px 0px;
+  color: #fff;
 }
 
-p {
+footer p {
+  color: #fff;
   margin: 0px;
   padding-left: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .so-me {
@@ -185,97 +181,4 @@ h2 {
 }
 .link-coop {
   grid-area: link-coop;
-}
-
-@media (min-width: 700px) {
-  .menu-text {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0px auto;
-    padding-left: 0px;
-    max-width: 80%;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-  }
-
-  nav {
-    padding-left: 0;
-  }
-
-  .hamburger-label,
-  .fa-info-circle {
-    display: none;
-  }
-
-  .menu-text li {
-    list-style-type: none;
-    display: inline;
-    margin: 0px auto;
-    padding: 0px 20px;
-  }
-
-  .menu-text a {
-    text-decoration: none;
-    text-align: center;
-    color: #4b5f6d;
-    background-color: white;
-    border: 3px solid #5e7c88;
-    border-radius: 30px;
-    padding: 5px 20px;
-  }
-
-  .menu-text a:hover {
-    background-color: #5e7c88;
-    border-color: #feb41c;
-  }
-
-  .logo-home {
-    max-width: 100px;
-  }
-
-  main {
-    max-width: 800px;
-  }
-
-  .info-text {
-    display: inline;
-    margin: 50px;
-    padding: 0;
-    margin: 0;
-  }
-
-  footer {
-    display: grid;
-    grid-template-columns: 1fr auto auto 1fr;
-    grid-template-rows: 1fr auto 1fr;
-  }
-
-  h2 {
-    grid-column: 2/4;
-    padding: 30px 0px 0px 0px;
-  }
-
-  .so-me {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .links {
-    grid-column: 4;
-    grid-row: 2;
-  }
-
-  .link-delivery {
-    grid-column: 2;
-    grid-row: 3;
-    margin: auto;
-  }
-
-  .link-coop {
-    grid-column: 3;
-    grid-row: 3;
-    margin: auto;
-  }
 }

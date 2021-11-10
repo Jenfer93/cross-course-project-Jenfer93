@@ -1,0 +1,87 @@
+.cart-summary {
+  border: 1px solid #4b5f6d;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-page h1 {
+  flex: 100%;
+}
+
+.items,
+.shipping,
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-page p {
+  margin: 0;
+}
+
+.shipping {
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+.total {
+  border-top: solid 1px #4b5f6d;
+}
+
+.continue-link {
+  text-decoration: none;
+  color: #1923ba;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+  display: block;
+}
+
+.cta {
+  min-width: 200px;
+  margin: 10px auto;
+}
+
+.checkout-cta {
+  display: block;
+  border: 3px solid #5e7c88;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+.shipping-information,
+.payment-information {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid #5e7c88;
+}
+
+.shipping-information input {
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 8px 50px;
+  border: none;
+  border-bottom: 2px solid #5e7c88;
+}
+
+.payment-information input {
+  margin-top: 20px;
+}
+
+#shippment-info,
+.shipping-information,
+#payment-info,
+.payment-information {
+  display: none;
+}
+
+#shippment-info:checked + .shipping-information {
+  display: flex;
+}
+
+#payment-info:checked + .payment-information {
+  display: flex;
+}

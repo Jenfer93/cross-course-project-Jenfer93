@@ -4,39 +4,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta description="Rainydays knows which jackets you need">
   <script src="https://kit.fontawesome.com/8674573c99.js" crossorigin="anonymous"></script>
-  <title>Rainydays</title>
+  <title>Rainydays | Home page</title>
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/media.css">
 </head>
 <body>
   <header>
-    <input type="checkbox" id="hamburger-menu">
     <nav>
-       <!--<div class="menu">
-        
-         <div class="menu-icons">
-            <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
-            <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-          </div> -->
         <ul>
           <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+          <input type="checkbox" id="hamburger-menu">
           <div class="menu-text">
-            <img class="logo-home" src="/images/RainyDays liten logo m snø.png" alt="home">
-            <li><a href="about.html">About us</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-            <li><a href="jackets.html">Jackets</a></li>
+            <li><a class="home-cta" href="index.html">Home</a></li>
+            <a class="logo-home" href="index.html"><img class="logo-home" src="/images/RainyDays liten logo m snø.png" alt="home"></a> 
+            <li><a class="menu-cta" href="about.html">About us</a></li>
+            <li><a class="menu-cta" href="contact.html">Contact us</a></li>
+            <li><a  class="menu-cta" href="jackets.html">Jackets</a></li>
           </div>
           <div class="icons">
               <i class="fas fa-search"></i>
-              <i class="fas fa-info-circle"></i>
-              <i class="fas fa-shopping-basket"></i>
+              <a href="about.html"><i class="fas fa-info-circle"></i></a>
+              <a href="checkout.html"><i class="fas fa-shopping-basket"></i></a>
           </div>
         </ul>
     </nav>
   </header>
   <main>
-    <img src="/images/RainyDays_Logo.png" alt="Rainydays" class="logo">
-    <button class="cta">Jackets</button>
+    <img src="/images/RainyDays_Logo.png" alt="Rainydays" class="logo"/>
+    <a class="cta" href="jackets.html">Jackets</a>
     <section class="homepage__images">
       <figure class="nonfeatured-image">
         <img src="/images/blake-cheek-dw96lVwMXJg-unsplash kopi - endret kontrast og str.jpg" alt="Girl in jacket and a waterfall">
@@ -49,7 +47,7 @@
       </figure>
     </section>
     <p class="info-text">Quality jackets for the best outdoors experiences! We have jackets for every outdoor occasion. </p>
-    <button class="cta cta-big">Explore more</button>
+    <a class="cta cta-big" href="jackets.html">Explore more</a>
   </main>
   <footer>
     <h2>Pushing the comfort zone</h2>
