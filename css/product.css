@@ -50,7 +50,8 @@ section figure {
   margin: 10px;
   border: solid 1px #707070;
   border-radius: 2px;
-  padding: 3px;
+  padding: 5px;
+  font-size: 1em;
   background-color: #fff;
 }
 
