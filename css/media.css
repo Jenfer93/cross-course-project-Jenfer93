@@ -217,7 +217,7 @@
       "img-small3 featured";
   }
 
-  .nonfeatured-image {
+  .product__images .nonfeatured-image {
     padding: 0;
     margin: 0;
   }
@@ -260,7 +260,6 @@
   .shipping-information,
   .payment-information {
     display: flex;
-    height: 35vh;
     font-size: 1.2em;
   }
 
