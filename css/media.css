@@ -42,6 +42,10 @@
   .img-small3 {
     display: none;
   }
+
+  .about-text {
+    margin: auto 30px;
+  }
 }
 
 @media (min-width: 800px) {
