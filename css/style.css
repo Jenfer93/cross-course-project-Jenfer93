@@ -6,16 +6,23 @@
 body {
   margin: 0px auto;
   width: 100%;
+  background-color: #5e7c88;
   min-height: 100vh;
   font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
 
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
 header {
   width: 100%;
   grid-row: 1;
-  height: 100px;
+  height: 78px;
 }
 
 nav {
@@ -56,7 +63,7 @@ ul {
 }
 
 main {
-  max-width: 400px;
+  max-width: 500px;
   margin: auto;
   text-align: center;
   grid-row: 2;
@@ -91,7 +98,7 @@ main a {
   display: block;
   border: 3px solid #5e7c88;
   background-color: #fff;
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 10px 30px;
   margin: 0px auto;
   max-width: 150px;
@@ -101,11 +108,13 @@ main a {
   font-weight: bold;
   color: #4b5f6d;
   transition: background-color 1s;
+  transition: border-radius 0.5s;
 }
 
 .cta:hover {
   background-color: #5e7c88;
   border-color: #feb41c;
+  border-radius: 10px;
   font-family: "Palatino", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
 }
@@ -115,7 +124,7 @@ main a {
   border: 3px solid #feb41c;
   padding: 10px auto;
   max-width: 300px;
-  margin: 50px;
+  margin: 50px 30px;
 }
 
 .cta-big:hover {
@@ -128,13 +137,13 @@ footer {
   color: #fff;
   font-size: 1em;
   grid-row: 3;
-  margin-top: 100px;
   background-color: #5e7c88;
   display: grid;
   grid-template-areas:
     "h2 h2"
     "links so-me"
     "link-delivery link-coop";
+  box-shadow: 0 3px 10px 0 #4b5f6d;
 }
 
 footer h2 {
@@ -163,14 +172,25 @@ footer p {
   padding-top: 0px;
 }
 
-.fa-comments {
+footer .fa-comments {
   padding-right: 20px;
+  color: #fff;
 }
 
-footer a {
+.link-coop,
+.link-delivery {
   padding: 0px 30px 30px 30px;
   text-decoration: none;
   color: #000000;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer i:hover {
+  color: #feb41c;
+  cursor: pointer;
 }
 
 h2 {
