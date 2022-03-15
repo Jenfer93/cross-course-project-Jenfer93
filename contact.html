@@ -45,22 +45,27 @@
   </header>
   <main>
     <h1>Contact us</h1>
-    <section class="contact-content">
+    <section class="contact-container">
       <p>If you have any questions, don't
         hesitate to contact us on one of 
         our platforms:</p>
-      <div class="contact-alt">
-        <ul>
-          <li><i class="fas fa-question"></i>   FAQ </li>
-          <li><i class="fas fa-phone-alt"></i> +47 123 45 678</li>
-          <li><i class="fab fa-facebook-square"></i> rainydays @ facebook</li>
-        </ul>
-        <ul>
-          <li><i class="fab fa-twitter"></i> @rainydays</li>
-          <li><i class="fas fa-envelope"></i> rainydays@gmail.com</li>
-          <li><i class="fas fa-comments"></i>Chat with us here!</li>
-        </ul>
-      </div> 
+      <section class="contact-alt">
+          <div class="contact"><i class="fas fa-phone-alt"></i> +47 123 45 678</div>
+          <div class="contact"><i class="fab fa-facebook-square"></i> rainydays @ facebook</div>
+          <div class="contact"><i class="fab fa-twitter"></i> @rainydays</div>
+          <div class="contact"><i class="fas fa-envelope"></i> rainydays@gmail.com</div>
+          <div class="chat-form">Chat with us here!
+          <form action="submit" class="submit-form">
+            <label for="name">Your full name</label>
+            <input type="text" placeholder="Your name" name="name" id="name" required>
+            <label for="email">Your email address</label>
+            <input type="email" placeholder="Email address" name="email" id="email" required>
+            <label for="textbox">What can we help you with?</label>
+            <input type="textarea" placeholder="What's on your mind?" name="textbox" rows="10" cols="30">
+            <button type="submit" class="cta">Send request</button>
+          </form>
+        </div>
+        </section> 
     </section>
   </main>
   <footer>

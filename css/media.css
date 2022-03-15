@@ -178,11 +178,6 @@
     font-size: 3em;
   }
 
-  .info-img {
-    max-width: 600px;
-    margin: 20px auto;
-  }
-
   /*Product page*/
   .product-page {
     display: flex;

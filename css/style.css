@@ -20,14 +20,17 @@ main {
 }
 
 header {
+  margin: 0 auto;
   width: 100%;
   grid-row: 1;
   height: 78px;
 }
 
 nav {
-  width: 100%;
   background: rgb(255, 255, 255, 0.8);
+  margin: auto;
+  max-width: 1900px;
+  width: 100%;
   position: fixed;
   top: 0;
   padding: 10px;
@@ -86,8 +89,10 @@ p {
 }
 
 .logo {
-  width: 80%;
   margin-bottom: 100px;
+  background: rgb(255, 255, 255, 0.4);
+  border-radius: 40px;
+  padding: 10px;
 }
 
 main a {
@@ -98,13 +103,13 @@ main a {
   display: block;
   border: 3px solid #5e7c88;
   background-color: #fff;
-  border-radius: 20px;
-  padding: 10px 30px;
+  border-radius: 15px;
+  padding: 10px 20px;
   margin: 0px auto;
   max-width: 150px;
   text-align: center;
   font-size: 1.5em;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
   font-weight: bold;
   color: #4b5f6d;
   transition: background-color 1s;
@@ -115,7 +120,7 @@ main a {
   background-color: #5e7c88;
   border-color: #feb41c;
   border-radius: 10px;
-  font-family: "Palatino", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+  font-family: "Palatino", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
     sans-serif;
 }
 
