@@ -1,50 +1,37 @@
-var products = [
- {
-   "id": 1,
-   "name": "Waterproof Jacket",
-   "color": "Orange",
-   "gender":"Female",
-   "prize": 90,
-   "img": "/images/blake-cheek-dw96lVwMXJg-unsplash kopi - endret kontrast og str.jpg",
- },
- {
-  "id": 2,
-   "name": "Waterproof windproof Jacket",
-   "color": "Blue",
-   "gender":"Female",
-   "prize": 90,
-   "img": "/images/alexander-paul-jxd_BtnzQBQ-unsplash.jpg",
- },
- {
-  "id": 3,
-   "name": "Waterproof Jacket",
-   "color": "Yellow",
-   "gender":"Male",
-   "prize": 90,
-   "img": "/images/daoud-abismail-K-v3TuSwMQA-unsplash.jpg",
- },
- {
-  "id": 4,
-   "name": "Waterproof Jacket Raincoat",
-   "color": "Orange",
-   "gender":"Female",
-   "prize": 90,
-   "img": "/images/gage-walker-6LT0b6LmCt4-unsplash.jpg",
- },
- {
-  "id": 5,
-   "name": "Raincoat",
-   "color": "Yellow",
-   "gender":"Male",
-   "prize": 90,
-   "img": "/images/daoud-abismail-oG4OvTFbiXk-unsplash.jpg",
- },
- {
-  "id": 6,
-   "name": "Warm Jacket",
-   "color": "Blue",
-   "gender":"Male",
-   "prize": 90,
-   "img": "/images/pexels-pnw-production-7624842.jpg",
- },
-]
+const url ="https://fakestoreapi.com/products";
+const proxy = "https://noroffcors.herokuapp.com/";
+const urlCors = proxy + url;
+const productsContainer = document.querySelector(".jackets");
+
+
+async function getProducts () {
+  try {
+    const response = await fetch (urlCors);
+    const product = await response.json();
+    console.log(product);
+
+    productsContainer.innerHTML ="";
+    
+    function createProduct () {
+      for (let i = 0; i<product.length; i++){
+        if(product[i].category === "jewelery" || product[i].category === "electronics") {
+          continue;
+        } 
+
+        productsContainer.innerHTML += 
+          `<a href="/product-page.html" class="jackets-features">
+            <img src="${product[i].image}">
+            <h2> ${product[i].title}</h2>
+            <p>${product[i].price}</p)
+
+          </a>
+          `
+      }
+    } 
+  } catch(error) {
+
+  }
+  createProduct();
+}
+
+getProducts();
