@@ -61,7 +61,8 @@ function createProduct () {
       `<a href="/product-page.html" class="jackets-features">
         <img src="${products[i].img}">
         <h2> ${products[i].name}</h2>
-        <p>${products[i].price}</p)
+        <p>$ ${products[i].price}</p>
+        <button class="cta">Check it out</button>
       </a>
       `
     } 

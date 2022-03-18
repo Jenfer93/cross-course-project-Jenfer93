@@ -122,6 +122,7 @@ main a {
   border-radius: 10px;
   font-family: "Palatino", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
     sans-serif;
+  cursor: pointer;
 }
 
 .cta-big {

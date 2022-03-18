@@ -21,12 +21,26 @@
   height: 350px;
   border-radius: 5px;
   box-shadow: 0 1px 5px 0 #4b5f6d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.5s;
+}
+
+.jackets-features:hover {
+  box-shadow: 0 2px 10px 0 #4b5f6d;
 }
 
 .jackets-features img {
   border-radius: 5px;
   max-height: 200px;
   max-width: 80%;
+}
+
+.cta {
+  font-size: 1em;
+  margin-bottom: 10px;
 }
 
 .jackets {
@@ -43,10 +57,12 @@ h1 {
 
 .jackets-features h2 {
   margin: 0;
+  font-size: 1.2em;
 }
 
 .jackets-features p {
   margin: 0;
+  font-size: 1em;
 }
 
 .jackets-page p {
