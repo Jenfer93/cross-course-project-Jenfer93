@@ -48,47 +48,42 @@
       <section class="cart-summary">
         <h1>Cart summary</h1>
         <div class="items">
-          <p>1 x Jacket</p>
-          <p>$ 99</p>
         </div>  
         <div class="shipping">
-          <p>Shipping cost</p>
-          <p>$ 0</p>
         </div>
         <div class="total">
-          <p>Total cost</p>
-          <p>$ 99</p>
         </div>
       </section>
       <a href="/jackets.html" class="continue-link">Continue shopping</a>
       <section>
     </div>  
-      <div>
+      <form method="post">
         <label class="checkout-cta" for="shippment-info">Shipping address <i class="fas fa-chevron-down"></i></label>
         <input type="checkbox" id="shippment-info">
         <fieldset class="shipping-information">
-          <legend>Shipping Address</legend>
+          <legend>Shipping Information</legend>
           <label for="address"> Street name</label>
           <input type="text" name="address" required>
           <label for="postalcode">Postal Code</label>
-          <input type="text" name="postalcode"  required>
+          <input type="text" name="postalcode"  required minlength="4">
           <label for="country">Country</label>
           <input type="text" name="country" required>
           <label for="name">Name of receiver</label>
           <input type="text" name="name" required>
+          <label for="email">Email address</label>
+          <input type="email" name="email" required>
         </fieldset>
-      </div>
-      <div>
-        <label class="checkout-cta" for="payment-info">Payment Method <i class="fas fa-chevron-down"></i></label>
-        <input type="checkbox" id="payment-info">
         <fieldset class="payment-information">
           <legend>Payment Method</legend>
-          <input type="checkbox" name="paypal" value="paypal" id="paypal"><label for="paypal">Paypal</label>
-          <input type="checkbox" name="vipps" value="vipps" id="vipps"><label for="vipps">Vipps</label>
-          <input type="checkbox" name="credit" value="credit" id="credit"><label for="credit">Credit card</label>
+          <select name="payment-method" id="payment-method" required>
+            <option value="empty">Payment</option>
+            <option value="paypal">Paypal</option>
+            <option value="vipps">Vipps</option>
+            <option value="credit">Credit card</option>
+          </select>
         </fieldset>
-      <a class="cta cta-big" href="/confirmed.html"></i> Confirm payment</a>
-    </div>
+        <button class="cta cta-big" href="/confirmed.html" >Confirm payment</button>
+      </form>
     </section>
   </main>
   <footer>
@@ -104,7 +99,8 @@
       <i class="fas fa-share-alt"></i>
     </div>
     <a class="link-delivery" href="#">Delivery details</a>
-    <a class="link-coop" href="#">Cooporation information</a>
+    <a class="link-coop" href="#">Corporation information</a>
   </footer>
+  <script src="/js/details.js" type="module"></script>
 </body>
 </html>

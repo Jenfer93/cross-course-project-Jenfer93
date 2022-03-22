@@ -46,17 +46,8 @@
   <main class="product-page">
     <h1>Raincoat</h1>
     <section class="product__images">
-      <figure class="nonfeatured-image img-small1" aria-label="Small product picture">
-        <img src="/images/blake-cheek-dw96lVwMXJg-unsplash kopi - endret kontrast og str.jpg" alt="Girl in jacket and a waterfall">
-      </figure>
       <figure class="featured-image" aria-label="Big product picture">
         <img src="/images/gage-walker-6LT0b6LmCt4-unsplash.jpg" alt="Girl in jacket in the rain">
-      </figure>
-      <figure class="nonfeatured-image img-small2" aria-label="Small product picture">
-        <img src="/images/alexander-paul-jxd_BtnzQBQ-unsplash.jpg" alt="Boy in jacket in the woods">
-      </figure>
-      <figure class="nonfeatured-image img-small3" aria-label="Small product picture">
-        <img src="/images/alexander-paul-jxd_BtnzQBQ-unsplash.jpg" alt="Girl in jacket in a tent">
       </figure>
     </section>
     <section class="product-interaction">
@@ -73,7 +64,11 @@
         </select>
       </div>
       <a class="cta cta-big cta-add-to-cart" href="#"> <i class="fas fa-cart-arrow-down"></i> Add to cart</a>
-      <!--<div class="added-item">Product added to cart</div>-->
+      <dialog class="added-item">
+        <h2>Product added to cart</h2>
+        <button class="continue cta">Shop more</button>
+      </dialog>
+      <!--reference: https://www.youtube.com/watch?v=TAB_v6yBXIE&t=400s&ab_channel=KevinPowell-->
       <a class="cta" href="#">Product information</a>
     </section>
     <section class="other-products">
@@ -117,6 +112,6 @@
     <a class="link-delivery" href="#">Delivery details</a>
     <a class="link-coop" href="#">Corporation information</a>
   </footer>
-  <!--<script src="/js/details.js" type="module"></script>-->
+ <script src="/js/details.js" type="module"></script>
 </body>
 </html>
