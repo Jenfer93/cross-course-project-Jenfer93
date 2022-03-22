@@ -1,4 +1,4 @@
-//import {products} from "./array.js";
+import {products} from "./array.js";
 
 const productsContainer = document.querySelector(".jackets");
 console.log(products)
@@ -19,5 +19,5 @@ function createProduct () {
   } )
 } 
 
-//createProduct(); 
+createProduct(); 
 
