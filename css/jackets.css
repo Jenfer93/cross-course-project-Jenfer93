@@ -5,6 +5,7 @@
   height: 600px;
   background-position: center;
   background-size: cover;
+  margin-bottom: 20px;
 }
 
 .info-img-text {
@@ -18,7 +19,9 @@
 
 .jackets-features {
   padding: 20px 10px 0 10px;
+  margin-bottom: 30px;
   height: 350px;
+  width: 200px;
   border-radius: 5px;
   box-shadow: 0 1px 5px 0 #4b5f6d;
   display: flex;
@@ -44,11 +47,10 @@
 }
 
 .jackets {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 50px;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 h1 {
