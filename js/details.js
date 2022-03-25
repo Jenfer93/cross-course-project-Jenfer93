@@ -33,7 +33,7 @@ createDetail();
 const modal = document.querySelector(".added-item");
 const addItem = document.querySelector(".cta-add-to-cart");
 const continueShopping = document.querySelector(".continue");
-const itemsInCart = document.querySelector(".items");
+//const itemsInCart = document.querySelector(".items");
 
 
 
@@ -45,9 +45,31 @@ const itemsInCart = document.querySelector(".items");
 continueShopping.addEventListener("click", ()=> {
   modal.close();
 })*/
-
 //Add items to cart
+  addItem.addEventListener ("click", () =>{
+    itemsInCart();
+  })
 
-addItem.onclick = function(event) {
- console.log(event.target);
+function cartNumbersOnLoad () {
+  let productNumber = localStorage.getItem("itemsInCart");
+
+  if (productNumber) {
+    document.querySelector(".cart span").innerText = productNumber;
+  }
 }
+
+function itemsInCart() {
+  let productNumber = localStorage.getItem("itemsInCart");
+  
+  productNumber = parseInt(productNumber);
+  
+  if (productNumber) {
+    localStorage.setItem("itemsInCart", productNumber + 1);
+    document.querySelector(".cart span").innerText = productNumber + 1;
+  } else {
+    localStorage.setItem ("itemsInCart", 1);
+    document.querySelector(".cart span").innerText = 1;
+  }
+}
+
+cartNumbersOnLoad();

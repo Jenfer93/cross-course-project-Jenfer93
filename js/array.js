@@ -7,6 +7,7 @@ export const products = [
    "gender":"Female",
    "price": "89",
    "img": "/images/blake-cheek-dw96lVwMXJg-unsplash kopi - endret kontrast og str.jpg",
+   "inCart": "0",
  },
  {
   "id": "2",
@@ -16,6 +17,7 @@ export const products = [
    "gender":"Female",
    "price": "109",
    "img": "/images/alexander-paul-jxd_BtnzQBQ-unsplash.jpg",
+   "inCart": "0",
  },
  {
   "id": "3",
@@ -25,6 +27,7 @@ export const products = [
    "gender":"Male",
    "price": "90",
    "img": "../images/daoud-abismail-K-v3TuSwMQA-unsplash.jpg",
+   "inCart": "0",
  },
  {
   "id": "4",
@@ -34,6 +37,7 @@ export const products = [
    "gender":"Female",
    "price": "99",
    "img": "../images/gage-walker-6LT0b6LmCt4-unsplash.jpg",
+   "inCart": "0",
  },
  {
   "id": "5",
@@ -43,6 +47,7 @@ export const products = [
    "gender":"Male",
    "price": "99",
    "img": "../images/daoud-abismail-oG4OvTFbiXk-unsplash.jpg",
+   "inCart": "0",
  },
  {
   "id": "6",
@@ -52,7 +57,8 @@ export const products = [
    "gender":"Male",
    "price": "85",
    "img": "../images/pexels-pnw-production-7624842.jpg",
+   "inCart": "0",
  },
 ]
 
-window.localStorage.setItem("jackets", JSON.stringify(products));
+//window.localStorage.setItem("jackets", JSON.stringify(products));
