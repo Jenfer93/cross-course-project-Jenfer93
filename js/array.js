@@ -2,6 +2,7 @@ export const products = [
  {
    "id": "1",
    "name": "Waterproof Jacket",
+   "description": "A thin jacket perfect for hiking in warm and wet weather",
    "color": "Orange",
    "gender":"Female",
    "price": "89",
@@ -10,6 +11,7 @@ export const products = [
  {
   "id": "2",
    "name": "Waterproof windproof Jacket",
+   "description": "A thin jacket perfect for hiking and camping in windy and wet weather",
    "color": "Blue",
    "gender":"Female",
    "price": "109",
@@ -18,6 +20,7 @@ export const products = [
  {
   "id": "3",
    "name": "Waterproof Jacket",
+   "description": "A thicker jacket perfect for the autumn weather",
    "color": "Yellow",
    "gender":"Male",
    "price": "90",
@@ -26,6 +29,7 @@ export const products = [
  {
   "id": "4",
    "name": "Waterproof Jacket Raincoat",
+   "description": "A thin jacket perfect for hiking in warm and wet weather",
    "color": "Orange",
    "gender":"Female",
    "price": "99",
@@ -34,6 +38,7 @@ export const products = [
  {
   "id": "5",
    "name": "Waterproof Jacket",
+   "description": "A thin jacket perfect for hiking in wet weather",
    "color": "Yellow",
    "gender":"Male",
    "price": "99",
@@ -42,6 +47,7 @@ export const products = [
  {
   "id": "6",
    "name": "Warm Jacket",
+   "description": "A warm jacket perfect for hiking in cold weather",
    "color": "Blue",
    "gender":"Male",
    "price": "85",

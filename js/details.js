@@ -6,30 +6,29 @@ const params = new URLSearchParams(queryString);
 
 const  jacketId = params.get("id");
 
-const imageJacket = document.querySelector(".product__images")
-
-
-/*products.forEach (function (product) {
-  if (products.id === jacketId) {
-    return true;
-  }
-})
- console.log (products);
-*/
-
-console.log(jacketId);
+const imageJacket = document.querySelector(".product__images");
+const infoJacket = document.querySelectorAll(".product");
+const heading = document.querySelector("h1");
+const otherProducts = document.querySelector(".other-products-img");
 
 function createDetail(){
   for (let i = 0; i < products.length; i++){
     if (jacketId === products[i].id){
-      console.log (products[i].name);
+      heading.innerText= `${products[i].name}`
+      imageJacket.innerHTML +=`
+      <img src="${products[i].img}" alt="${products[i].name}"/>
+      `
+      infoJacket[0].innerHTML +=`${products[i].description}`
+      infoJacket[1].innerHTML +=`$${products[i].price}`
     } else {
-      break;
+      continue;
     }
   }
 }
 
 createDetail();
+
+ 
 
 const modal = document.querySelector(".added-item");
 const addItem = document.querySelector(".cta-add-to-cart");
