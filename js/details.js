@@ -9,7 +9,8 @@ const  jacketId = params.get("id");
 const imageJacket = document.querySelector(".product__images");
 const infoJacket = document.querySelectorAll(".product");
 const heading = document.querySelector("h1");
-const otherProducts = document.querySelector(".other-products-img");
+const addItem = document.querySelectorAll(".cta-add-to-cart");
+
 
 function createDetail(){
   for (let i = 0; i < products.length; i++){
@@ -28,27 +29,13 @@ function createDetail(){
 
 createDetail();
 
- 
-
-const modal = document.querySelector(".added-item");
-const addItem = document.querySelector(".cta-add-to-cart");
-const continueShopping = document.querySelector(".continue");
-//const itemsInCart = document.querySelector(".items");
-
-
-
-/*addItem.addEventListener("click", ()=> {
-  modal.showModal();
-
-})
-
-continueShopping.addEventListener("click", ()=> {
-  modal.close();
-})*/
 //Add items to cart
-  addItem.addEventListener("click", () =>{
-    itemsInCart();
+for(let i = 0; i < addItem.length; i++){  
+addItem[i].addEventListener("click", () =>{
+    itemsInCart(products[i]);
+    addItem[i].innerText = "Product added to cart"
   })
+}
 
 function cartNumbersOnLoad () {
   let productNumber = localStorage.getItem("itemsInCart");
@@ -58,7 +45,8 @@ function cartNumbersOnLoad () {
   }
 }
 
-function itemsInCart() {
+function itemsInCart(products) {
+
   let productNumber = localStorage.getItem("itemsInCart");
   
   productNumber = parseInt(productNumber);
@@ -70,6 +58,39 @@ function itemsInCart() {
     localStorage.setItem ("itemsInCart", 1);
     document.querySelector(".cart span").innerText = 1;
   }
+
+  //setItems(products);
 }
+
 cartNumbersOnLoad();
+
+/*function setItems(products) {
+  let cartItems = localStorage.getItem("productsInCart");
+  
+  cartItems = JSON.parse(cartItems);
+
+  console.log(cartItems);
+
+  if(cartItems !== null) {
+    
+    if(cartItems[products.id] === undefined) {
+      cartItems = {
+        ...cartItems,
+        [products.id]: products
+      }
+    }
+    cartItems[products.id].inCart += 1;
+  } else {
+    products.inCart = 1;
+    cartItems = {
+      [products.id]: products
+    }
+  }
+  
+  localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+
+}*/
+
+
+
 
