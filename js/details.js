@@ -46,7 +46,7 @@ continueShopping.addEventListener("click", ()=> {
   modal.close();
 })*/
 //Add items to cart
-  addItem.addEventListener ("click", () =>{
+  addItem.addEventListener("click", () =>{
     itemsInCart();
   })
 
@@ -71,5 +71,5 @@ function itemsInCart() {
     document.querySelector(".cart span").innerText = 1;
   }
 }
-
 cartNumbersOnLoad();
+
