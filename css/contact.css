@@ -40,7 +40,7 @@ label {
 }
 
 .cta {
-  width: 300px;
+  max-width: 300px;
   font-size: 0.7em;
   text-decoration: none;
   cursor: pointer;
