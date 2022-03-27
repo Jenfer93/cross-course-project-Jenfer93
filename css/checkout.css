@@ -6,6 +6,12 @@
   flex-direction: column;
 }
 
+.cart {
+  padding: 20px;
+  margin-bottom: 30px;
+  font-size: 0.8em;
+}
+
 .checkout-page h1 {
   flex: 100%;
 }
@@ -57,6 +63,10 @@
   flex-direction: column;
   border-radius: 10px;
   border: 2px solid #5e7c88;
+}
+
+.shipping-information {
+  margin-top: 30px;
 }
 
 .shipping-information input {
