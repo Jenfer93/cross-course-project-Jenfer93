@@ -6,10 +6,11 @@ img {
 
 h1 {
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .product__images {
-  margin: 10px;
+  margin: auto;
   max-width: 300px;
   flex: 50%;
 }

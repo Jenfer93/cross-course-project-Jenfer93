@@ -1,41 +1,41 @@
-import { products } from "./array.js";
-
 const queryString = document.location.search; 
 
 const params = new URLSearchParams(queryString);
 
 const  jacketId = params.get("id");
 
+const url = "https://jferagen.one/rainydays/wp-json/wc/store/products/" + jacketId;
+
 const imageJacket = document.querySelector(".product__images");
 const infoJacket = document.querySelectorAll(".product");
 const heading = document.querySelector("h1");
 const addItem = document.querySelectorAll(".cta-add-to-cart");
+const productsLike = document.querySelector(".other-products");
 
-
-function createDetail(){
-  for (let i = 0; i < products.length; i++){
-    if (jacketId === products[i].id){
-      heading.innerText= `${products[i].name}`
+async function getDetails() {
+  const response = await fetch(url);
+  const details = await response.json();
+  
+  imageJacket.innerHTML ="";
+  heading.innerText= `${details.name}`
       imageJacket.innerHTML +=`
-      <img src="${products[i].img}" alt="${products[i].name}"/>
+      <img src="${details.images[0].src}" alt="${details.name}"/>
       `
-      infoJacket[0].innerHTML +=`${products[i].description}`
-      infoJacket[1].innerHTML +=`$${products[i].price}`
-    } else {
-      continue;
-    }
-  }
-}
-
-createDetail();
+      infoJacket[0].innerHTML +=`${details.description}`
+      infoJacket[1].innerHTML +=`$${details.prices.price}`
 
 //Add items to cart
-for(let i = 0; i < addItem.length; i++){  
-addItem[i].addEventListener("click", () =>{
-    itemsInCart(products[i]);
-    addItem[i].innerText = "Product added to cart"
-  })
+  for(let i = 0; i < addItem.length; i++){  
+  addItem[i].addEventListener("click", () =>{
+      itemsInCart(details);
+      addItem[i].innerText = "Product added to cart"
+    })
+  }
+  console.log (details);
 }
+
+getDetails();
+
 
 function cartNumbersOnLoad () {
   let productNumber = localStorage.getItem("itemsInCart");
@@ -45,7 +45,7 @@ function cartNumbersOnLoad () {
   }
 }
 
-function itemsInCart(products) {
+function itemsInCart(details) {
 
   let productNumber = localStorage.getItem("itemsInCart");
   

@@ -1,23 +1,32 @@
-import {products} from "./array.js";
-
+const baseUrl = "https://jferagen.one/rainydays/wp-json/wc/store/products";
 const productsContainer = document.querySelector(".jackets");
-console.log(products)
+const femaleButton = document.querySelector(".her");
+const maleButton = document.querySelector(".him");
 
-function createProduct () {
+async function getProducts(url) {
+    const response = await fetch(url);
+    const products = await response.json();
+    const queryString = document.location.search; 
+    const params = new URLSearchParams(queryString);
+    const parameter = params.get("parameter"); 
+    
+    productsContainer.innerHTML = "";
 
-  productsContainer.innerHTML ="";
-  
-  products.forEach((products) => {
-  productsContainer.innerHTML += 
-    `<a href="/product-page.html?id=${products.id}" class="jackets-features">
-      <img src="${products.img}"/>
-      <h2> ${products.name}</h2>
-      <p>$ ${products.price}</p>
-      <button class="cta">Check it out</button>
-    </a>
-    `
+    products.forEach((products, index) => {
+      productsContainer.innerHTML += 
+        `<a href="/product-page.html?id=${products.id}" class="jackets-features">
+          <img src="${products.images[0].src}"/>
+          <h2> ${products.name}</h2>
+          <p>$ ${products.prices.price}</p>
+          <button class="cta">Check it out</button>
+        </a>
+        `
   } )
-} 
+}
 
-createProduct(); 
+
+getProducts(baseUrl);
+
+
+
 
