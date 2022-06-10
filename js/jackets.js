@@ -1,4 +1,6 @@
 const baseUrl = "https://jferagen.one/rainydays/wp-json/wc/store/products";
+const proxy = "https://noroffcors.herokuapp.com/";
+const url = proxy + baseUrl;
 const productsContainer = document.querySelector(".jackets");
 const femaleButton = document.querySelector(".her");
 const maleButton = document.querySelector(".him");
