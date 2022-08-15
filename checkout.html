@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta description="finally a RainyDays jacket on it's way to a new forever home">
+  <script src="https://kit.fontawesome.com/8674573c99.js" crossorigin="anonymous"></script>
+  <title>RainyDays | Checkout</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/checkout.css">
+  <link rel="stylesheet" href="/css/media.css">
+  <!-- Hotjar Tracking Code for https://youthful-franklin-a4c79b.netlify.app -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2858506,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="hamburger-nav">
+        <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu"> 
+         <ul class="menu-text">
+            <li><a class="home-cta" href="index.html">Home</a></li>
+            <li class="logo-home"><a class="logo-home" href="index.html"><img src="/images/RainyDays liten logo m snø.png" alt="home"></a> </li>
+            <li><a class="menu-cta" href="about.html">About us</a></li>
+            <li><a class="menu-cta" href="contact.html">Contact us</a></li>
+            <li><a  class="menu-cta" href="jackets.html">Jackets</a></li>
+        </ul>
+      </div> 
+        <div class="icons">
+          <i class="fas fa-search"></i>
+          <a href="about.html" aria-label="About"><i class="fas fa-info-circle"></i></a>
+          <a href="checkout.html" aria-label="Checkout"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+    </nav>
+  </header>
+  <main class="checkout-page">
+    <div>
+      <section class="cart-summary">
+        <h1>Cart summary</h1>
+        <div class="cart">
+          <div class="items">
+            <p>Products</p> 
+            <p>Waterproof Jacket</p>
+            <p>$ 89</p>
+          </div> 
+          <div class="shipping">
+            <p>Shipping cost</p>
+            <p>$ 0</p>
+          </div>
+          <div class="total">
+            <p>Total: </p>
+            <p>$ 89</p>
+          </div>
+        </div>  
+        <label class="checkout-cta" for="shippment-info">Shipping address <i class="fas fa-chevron-down"></i></label>
+        <input type="checkbox" id="shippment-info">
+        <fieldset class="shipping-information">
+          <legend>Shipping Information</legend>
+          <label for="address"> Street name</label>
+          <input type="text" name="address" required>
+          <label for="postalcode">Postal Code</label>
+          <input type="text" name="postalcode"  required minlength="4">
+          <label for="country">Country</label>
+          <input type="text" name="country" required>
+          <label for="name">Name of receiver</label>
+          <input type="text" name="name" required>
+          <label for="email">Email address</label>
+          <input type="email" name="email" required>
+        </fieldset>
+        <fieldset class="payment-information">
+          <legend>Payment Method</legend>
+          <select name="payment-method" id="payment-method" required>
+            <option value="paypal">Paypal</option>
+            <option value="vipps">Vipps</option>
+            <option value="credit">Credit card</option>
+          </select>
+        </fieldset>
+        <a class="cta cta-big cta-checkout" href="confirmed.html" type="submit">Confirm payment</a>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <h2>Pushing the comfort zone</h2>
+    <div class="so-me">
+      <p>Follow us!</p>
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+    <div class="links">
+      <a href="contact.html"><i class="fas fa-comments"></i></a>
+      <i class="fas fa-share-alt"></i>
+    </div>
+    <a class="link-delivery" href="#">Delivery details</a>
+    <a class="link-coop" href="#">Corporation information</a>
+  </footer>
+  <script src="/js/details.js" type="module"></script>
+  <!--<script src="/js/formCheckout.js"></script>-->
+</body>
+</html>

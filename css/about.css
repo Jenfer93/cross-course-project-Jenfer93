@@ -1,0 +1,30 @@
+/*about us*/
+.about-container {
+  background-image: url("/images/mountains-6540497_640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  padding-top: 10px;
+}
+
+.logo {
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.about-text {
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+}
+
+.about-text p {
+  margin: 30px auto;
+  line-height: 1.5em;
+  padding: 15px 20px;
+}

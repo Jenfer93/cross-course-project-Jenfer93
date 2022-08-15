@@ -1,0 +1,54 @@
+/* Home page */
+
+.home-logo-container {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  background-image: url("/images/mountains-g278f8f158_1920_kopi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  max-height: 500px;
+}
+
+.logo {
+  max-width: 300px;
+}
+
+.info-text {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.homepage__images {
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+
+.image {
+  max-width: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.women {
+  background-image: url("/images/gage-walker-6LT0b6LmCt4-unsplash.jpg");
+}
+
+.men {
+  background-image: url("/images/daoud-abismail-oG4OvTFbiXk-unsplash.jpg");
+}
+
+.homepage__images a {
+  margin-top: 300px;
+}

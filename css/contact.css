@@ -1,0 +1,49 @@
+/*contact us*/
+.contact-container {
+  text-align: left;
+  margin: auto 20px;
+  min-height: 500px;
+}
+
+.contact-alt {
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contact {
+  padding: 40px;
+}
+
+.contact:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 300px;
+  margin: 0px 20px 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(243, 242, 242);
+}
+
+label {
+  font-size: 0.7em;
+}
+
+.cta {
+  max-width: 300px;
+  font-size: 0.7em;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 10px;
+}
